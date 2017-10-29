@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/src/css/grid.css" />
+  <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+  <title>Old School</title>
+</head>
+
+<body>
+
+
+<div class="header">
+
+</div>
+<div class="download">
+  <a href="/src/media/Old-School-Brochure.pdf"><img class="download-icon" src="/src/img/download-icon.svg" /></a>
+</div>
+<div class="down-arrow">
+<img class="arrow-scroll" src="/src/img/arrow.svg" />
+</div>
+<div class="content">
+  <div class="left">
+    <img class="logo" src="/src/img/wsb-logo.svg" />
+    <p>
+      <span class="boldy">Duncan Senior / WSB </span><br />
+<a href="tel://0113 234 1444">0113 234 1444</a><br />
+Dsenior@wsbproperty.co.uk<br />
+<br /><br />
+<span class="boldy">Alex Jowett / WSB</span><br />
+<a href="tel://01132341444">0113 234 1444</a><br />
+AJowett@wsbproperty.co.uk<br />
+    </p>
+  </div>
+  <div class="right">
+        <img class="logo" src="/src/img/jll-logo.svg" />
+<p>
+  <span class="boldy">Richard Thornton / JLL</span><br />
+<a href="tel://07966532251">07966 532251</a><br />
+Richard.Thornton@eu.jll.com<br />
+<br /><br />
+<span class="boldy">Zach Mehdizadeh / JLL</span><br />
+<a href="tel://01132355281">0113 235 5281</a><br />
+Zach.Mehdizadeh@eu.jll.com<br />
+</p>
+  </div>
+</div>
+</body>
+<script>
+$(window).ready(function() {
+	$(this).one('scroll', function() {
+		$('.down-arrow').addClass('hideArrow');
+	});
+});
+</script>
+</html>
