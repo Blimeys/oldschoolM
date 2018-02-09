@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>#map {
+    width:100%;
+    height:450px;
+    }</style>
+</head>
+
+<body>
+
+  <!-- HEADER ENDS -->
+  <!-- CONTENT -->
+  <div id="map"></div>
+
+
+  <!-- FOOTER ENDS -->
+  <script>
+  function initMap() {
+	var milltag = {
+		lat: 51.5253657,
+		lng: -0.2144575
+	};
+
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 15,
+		center: milltag,
+		scrollwheel: false,
+		disableDefaultUI: false,
+		styles: [
+			{
+				elementType: 'geometry.fill',
+				stylers: [
+					{
+						saturation: -60
+					},
+					{
+						lightness: 45
+					}
+				]
+			},
+			{
+				featureType: 'landscape.man_made',
+				elementType: 'geometry.fill',
+				stylers: [
+					{
+						saturation: -10
+					},
+					{
+						lightness: 10
+					}
+				]
+			}
+		]
+	});
+	var icon = {
+		url: 'icon-48x48.png' // url
+		// scaledSize: new google.maps.Size(75, 75) // scaled size
+	};
+	var marker = new google.maps.Marker({
+		position: milltag,
+		map: map,
+		icon: icon
+	});
+}
+</script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzqbisTg3D6Lg2PSk9d9Tz8x-GJCuh1bA&callback=initMap">
+  </script>
+</body>
+
+</html>

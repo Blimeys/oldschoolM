@@ -1,0 +1,189 @@
+:root {
+	--main-font: 'Crimson Text', serif;
+	--font-main-size: 1rem;
+}
+
+body {
+	margin: 0;
+	font-family: var(--main-font);
+	font-size: var(--font-main-size);
+	background-color: white;
+}
+a {
+	color: white;
+	font-size: 1.2rem;
+	text-align: center;
+	text-decoration: none;
+	font-family: inherit;
+}
+p {
+	color: white;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.header {
+	position: relative;
+	background: url('/src/img/img-2560px.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 1200px;
+	width: auto;
+}
+.download {
+	height: 400px;
+	background-color: white;
+}
+.download-icon {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 140px;
+	fill: #2dccd3;
+}
+.content {
+	background-color: #2dccd3;
+	padding-bottom: 15rem;
+}
+.logo {
+	padding-top: 9rem;
+	padding-bottom: 1rem;
+	height: 80px;
+}
+.boldy {
+	font-weight: 600;
+}
+.content {
+	height: 800px;
+	text-align: center;
+}
+.left,
+.right {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+.down-arrow {
+	width: 90px;
+	position: fixed;
+	top: 86%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: visible;
+	transition: visibility 0.8s, opacity 0.5s linear;
+	opacity: 1;
+}
+.hideArrow {
+	visibility: hidden;
+	opacity: 0;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	.header {
+		position: relative;
+		background: url('/src/img/img-400px.jpg');
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 1350px;
+		width: auto;
+	}
+	.download {
+		height: 500px;
+		background-color: white;
+	}
+	.download-icon {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 190px;
+		fill: #2dccd3;
+	}
+	.content {
+		background-color: #2dccd3;
+		height: auto;
+		padding-bottom: 15rem;
+		text-align: inherit;
+	}
+	.logo {
+		padding-top: 9rem;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		height: 190px;
+	}
+	.boldy {
+		font-weight: 600;
+	}
+	.left,
+	.right {
+		display: block;
+		width: auto;
+		float: none;
+	}
+	p {
+		font-size: 2.3rem;
+	}
+	a {
+		font-size: 2.3rem;
+	}
+	.down-arrow {
+		display: none;
+	}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.header {
+		position: relative;
+		background: url('/src/img/img-1024px.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 1200px;
+		width: auto;
+	}
+	.download {
+		height: 500px;
+		background-color: white;
+	}
+	.download-icon {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 140px;
+		fill: #2dccd3;
+	}
+	.content {
+		background-color: #2dccd3;
+		padding-bottom: 15rem;
+	}
+	.logo {
+		padding-top: 9rem;
+		height: 140px;
+	}
+	.boldy {
+		font-weight: 600;
+	}
+	.content {
+		height: 800px;
+	}
+	.left,
+	.right {
+		width: 40%;
+		float: left;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.down-arrow {
+		display: none;
+	}
+}
